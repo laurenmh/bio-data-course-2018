@@ -89,21 +89,21 @@ Day | Date | Topic | Lesson
 ------|-------|------------|-----------------------------------------
 1 | M 9/24 | Visualize | Plotting before analyzing  
 2 | W 9/26 | General   | Overview of R, R Studio  
-3 | M 10/1 | General | Swirl practice and importing data 11.1-11.6 
-4 | W 10/3 | Visualize | ggplot2: aesthetic mapping and facets 3.1-3.5  
-5 | M 10/8 | Visualize | ggplot2: geometric objects, coordinate systems 3.6-3.10  
+3 | M 10/1 | General | `swirl` practice and importing data 11.1-11.6 
+4 | W 10/3 | Visualize | `ggplot2`: aesthetic mapping and facets 3.1-3.5  
+5 | M 10/8 | Visualize | `ggplot2`: geometric objects, coordinate systems 3.6-3.10  
 6 | W 10/10 | Visualize | _Work day_ 
-7 | M 10/15 | Transform | Rearranging data 5.1-5.5  
-8 | W 10/17 | Transform | Grouping and summarizing data 5.6-5.7   
+7 | M 10/15 | Transform | Rearranging data and `dplyr` 5.1-5.5  
+8 | W 10/17 | Transform | Grouping and summarizing with `dplyr` 5.6-5.7   
 9 | M 10/22 | Transform | Workflows and the pipeline 6.1-6.3, 18.1-18.3  
 10 | W 10/24 | Transform | _Work day_   
-11 | M 10/29 | Wrangle | Relational data and joins 13.1-13.7  
-12 | W 10/31 | Wrangle | Tidy data 12.1-12.2, 12.7  
-13 | M 11/5 | Wrangle | Workflows with spread, gather and unite 12.3-12.6  
+11 | M 10/29 | Wrangle | Relational data and joins with `dplyr` 13.1-13.7  
+12 | W 10/31 | Wrangle | Tidy data and `tidyr` 12.1-12.2, 12.7  
+13 | M 11/5 | Wrangle | Workflows with data tidying 12.3-12.6  
 14 | W 11/7 | Wrangle | _Work day_  
 15 | M 11/12 | Communicate | Good vs bad graphs  
 16 | W 11/14 | Communicate | Spatial visuals _with Joanna Merson_ 
-17 | M 11/19 | Communicate | ggplot2 themes  
+17 | M 11/19 | Communicate | `ggplot2`: themes  
 18 | W 11/21 | Communicate | Peer review   
 19 | M 11/26 | Communicate | _Work day_  
 20 | W 11/28 | Communicate | Odds and ends  
