@@ -1,0 +1,66 @@
+---
+title: "R Resources"
+output:
+  pdf_document: default
+  word_document: default
+date: "ENVS 410/510 Winter 2018"
+---
+
+# Resources for learning R
+Because R is an open source project, there are a lot of R enthusiasts out there who have provided great documentation on learning R. There are also good forums where you can learn from (and answer) other people's questions or ask your own.
+
+## Getting help within R
+- To access the help for any function in R, type a question mark followed by the function name. For example, to get help with `sum` type `?sum`
+
+- Within RStudio, you can see all the help files for a given package by clicking on the "package" tab in the lower right panel and then clicking the hyper-linked package name.
+
+- Another great way to learn R is to look at the source code. You can view the source code for any function by typing the function name into the R console. 
+
+- And another great way to learn R is to look at other people's scripts! If you aren't sure what a script does, form a hypothesis about it, and then test your hypothesis by running one section at a time and seeing what happens. 
+
+## Getting help on the web
+
+### Manuals and tutorials
+**Quick-R**                                         http://www.statmethods.net/index.html
+Quick-R was our go-to stop when we began learning R, and is still the first stop whenever we need a refresher. It's well-organized with sections on the R Interface, Data Input and Management, Basic and Advanced Stats and Basic and Advanced Graphs.  
+
+**Cookbook for R**                                http://www.cookbook-r.com/
+Has a goal of providing solutions to common tasks and problems in analyzing data. We often find the solution here after googling an issue.
+
+**swirl**                                          http://swirlstats.com/ 
+swirl's motto is "Learn R, in R". It is a package that walks you through different lessons. Modules include R Programming, Data Analysis, Getting and and Cleaning Data, Regression Models and Statistical Inference. It is actively being developed, so keep checking in for new lessons!
+
+**The R Manuals at CRAN**                          http://cran.r-project.org/manuals.html
+Detailed walk-through on basics of R and data import/export.
+
+**RStudio website**                               http://www.rstudio.com/resources/training/
+The RStudio website has a lot of online tutorials and information. It is particularly helpful for R functionality enabled by RStudio, such as RMarkdown and Shiny.
+
+**Advanced R** by Hadley Wickham                   http://adv-r.had.co.nz/
+Hadley Wickham does has made it is mission to make R more useable and accessible to a wide audience. Don't be intimiated by the "Advanced" moniker, the foundations are explained well too.
+
+**ggplot2 guide**                                 http://docs.ggplot2.org/current/
+Easily-to-navigate help on ggplot2, with tons of examples.
+
+**R Programming.net**                              http://rprogramming.net/
+Includes a lot of bite-sized "how-tos" and has a good link list.
+
+###Search engines and community sites
+**R-Seek**                                        http://www.rseek.org/
+Restricts a google-search to just R-related material. This is especially great when you're searching for help on a function whose name is common English. Compare an rseek vs google search on "aggregate".
+
+**Stack Overflow**                              http://stackoverflow.com/
+A question and answer site for programmers. Often if you have a problem other people had it too - this is a great place to look and see if they had it answered. If you have had a good look here and in other resources and can't find your solution, go ahead and ask. Be sure to give a "reproducible" example so that others can recreate your problem to help find the solution.
+
+**R-project listservs**                     http://www.r-project.org/mail.html
+Mailing lists for different R topics. The archives are great to search.
+
+###Cheat sheets 
+
+- R Ref Card                            http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf
+- tidyr and dplyr Cheat Sheet           http://www.rstudio.com/wp-content/uploads/2015/01/data-wrangling-cheatsheet.pdf
+- RMarkdown Cheat Sheet                 http://rmarkdown.rstudio.com/RMarkdownCheatSheet.pdf
+- R Color Guide                         http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+- Google Style Guide                    http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml
+
+.
