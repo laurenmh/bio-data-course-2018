@@ -3,7 +3,6 @@ title: "R Resources"
 output:
   pdf_document: default
   word_document: default
-date: "ENVS 410/510 Winter 2018"
 ---
 
 # Resources for learning R
