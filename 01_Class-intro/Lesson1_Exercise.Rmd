@@ -1,0 +1,52 @@
+---
+title: "Exploratory Data Visualization"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## In-class exercise: 
+In groups of four, plot the data in Table 1 to answer the following questions:
+
+1) Do mortality rates change with air pollution concentration? 
+2) Does accounting for season change how you perceive the relationship between mortality and pollution? 
+
+Please make your plot large enough to present to the class.
+
+```{r, echo=F}
+## Create simulated data for air pollution and mortality
+wDM <- sort(sample(c(200:250), size = 8, replace = TRUE))
+wPM <- sort(sample(c(1:20), size = 8, replace=T))
+
+fDM <- sort(sample(c(180:230), size = 8, replace = TRUE))
+fPM <- sort(sample(c(5:30), size = 8, replace=T))
+
+spDM <- sort(sample(c(165:220), size = 8, replace = TRUE))
+spPM <- sort(sample(c(8:35), size = 8, replace=T))
+
+sumDM <- sort(sample(c(150:200), size = 8, replace = TRUE))
+sumPM <- sort(sample(c(10:40), size = 8, replace=T))
+
+## Put it together
+togDM <- c(wDM, sumDM, fDM, spDM)
+togPM <- c(wPM, sumPM, fPM, spPM)
+
+a <- togPM
+b <- togDM
+season <- c(rep("winter", 8), rep("summer", 8), rep("fall", 8), rep("spring", 8))
+
+alltog <- data.frame(season, a,b)
+names(alltog)[2:3] = c( "PM10", "Mortality")
+
+#write.csv(alltog, "PollutionData_Exercise.csv")
+```
+
+```{r setup, include=T, echo=F}
+library(knitr)
+mydat <- read.csv("PollutionData_Exercise.csv")
+names(mydat)=c("Season", "PM10 Concentration", "Daily mortality (all causes)")
+kable(mydat)
+```
+
+
+Table 1. Simulated data of eight years of seasonal air quality, measured as particulate matter (PM10) and centered around the mean, and daily mortality rates in the United States.
