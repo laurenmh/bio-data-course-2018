@@ -1,0 +1,56 @@
+---
+title: "Pre-course Questionnaire"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+##Name: 
+
+1. **Are you an undergraduate or graduate student, and what year are you in your program?**
+\vspace{12pt}
+
+ 
+2. **What is your major or program of study?:**
+\vspace{12pt}
+
+
+3. **In three sentences or less, please describe any environmental topics or questions you are particularly interested in or are currently researching?**
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+\vspace{12pt}
+
+4. **What best describes your familiarity with R?**
+    + I've never heard of R
+    + I have heard of R but never used it 
+    + I have written R scripts to analyze data
+    + I have written R functions to use and that others can use
+    
+5. **What best describes your familiarity with RStudio?**
+    + I've never heard of RStudio
+    + I have heard of RStudio but never used it 
+    + I have written RStudio scripts to analyze data
+    + I have written RStudio functions to use and that others can use
+
+6. **What operating system are you most comfortable with?**
+    + Apple OS X
+    + Linux
+    + Windows
+    + I do not know what operating system I use
+        
+7. **With which programming language, if any, could you write a program from scratch which imports some data and calculates mean and standard deviation of that data?**
+    + C
+    + C++
+    + Perl
+    + MATLAB
+    + Python
+    + R
+    + Java
+    + Other:
+    
+8. **Do you have a dataset that you would like to focus on in this course? If so, please briefly describe the question and type of data collected (feel free to flip the page).**
+    
+    

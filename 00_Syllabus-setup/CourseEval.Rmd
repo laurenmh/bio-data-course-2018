@@ -1,0 +1,51 @@
+---
+title: "ENVS 410/510 Course Feedback"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+### Course content
+
+1) What topics did you find most useful? 
+\
+\
+\
+\
+1) What topics did you find least useful? 
+\
+\
+\
+\
+2) Did the sequence and time devoted to the topics make sense? Are there any you would reorder?
+\
+\
+\
+\
+
+### Instruction
+
+1) What aspects of the course and our teaching helped you learn best?
+\
+\
+\
+\
+2) What advice would you give to help us improve your learning in this course?
+\
+\
+\
+\ 
+
+### General
+
+1) What other ideas would you suggest to improve this course?
+\
+\
+\
+\
+2) What advice would you give to another student who is considering taking this course? 
+\
+\
+\
+\

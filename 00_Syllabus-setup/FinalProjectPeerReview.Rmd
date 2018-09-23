@@ -1,0 +1,43 @@
+---
+title: "ENVS 410/510 Peer Review Format"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+**Your name**:   
+**Author's name**:
+
+**1) Read the entire manuscript intially to get a general impression of it**, asking questions such as: 1) What environmental question did it address? What data will be used? Is it interesting? What did you learn? Was it easy to read?  
+_Give your general impressions of the manuscript here_:
+
+
+
+**2) Then go back and read the paper again, more analytically this time.  Make corrections on the manuscript itself, but also respond to each of the following sections.**  
+
+**a. Introduction** 
+
+* Has the author set the stage for the problem? Is the concept and question well developed and contextualized?  
+* Does the content of the introduction seem relevant to the identified question and approach?   
+* Are all statements referenced with quality literature?   
+* Are the hypotheses clear and in a logical order? Are they directional using predictions?   
+* Has the author proofread the manuscript for spelling, punctuation, and grammatical errors?    
+_Comments._  
+
+**b. Data overview**  
+* Do the datasets meet requirements?
+* Is there sufficient metadata and information about the data structure to understand how it will be used? Is there as much information as would be returned by the str() function?
+_Comments._  
+
+
+**c. Workflow**  
+* Are the end-product visualization goals appropriate and feasible given the data?  
+* Has the author accounted for all relevant QAQC?  
+* Is there a logical flow from the raw data to the end products? If not, what suggestions would you make?   
+_Comments._  
+
+
+
+
+
+
