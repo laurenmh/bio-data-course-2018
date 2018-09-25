@@ -1,0 +1,60 @@
+---
+title: "Computer set-up"
+output: pdf_document
+---
+
+<br> 
+
+##_Computers in the lab are already configured with R and RStudio. If you opt to use a personal computer please install R and RStudio prior to class._
+
+###What are R and RStudio?
+
+####R
+R is a statistical and graphical analysis package, freely available for several platforms (Windows, Mac OS X, Linux). 
+
+R can be seen as both a programming language and a package of statistical functions. The basic implementation of R contains a great number of statistical and graphical functions to compute means and variances, for example, and draw histograms and boxplots. In addition to its base package, many researchers have been developing and sharing advanced R functions. These functions are usually grouped into libraries that are freely available at the R project site (<http://www.r-project.org/>), on developers’ homepages, or in publications (e.g., electronic supplements of the journal Ecology). Given its flexibility and the fact that it is multi-platform and free, R has become one of the main statistical packages used by ecologists, resource managers, statisticians, as well as scientists in many other fields.
+
+####RStudio 
+On Windows and OS X, R comes with a graphical user interface, but RStudio is an excellent front-end for R with integrated graphics and coding tools and is recommended (read: required) for this course. It is free and available for both Windows, Mac OS X and Linux.
+
+
+###Installing R on a computer
+
+Go to the Comprehensive R Archive Network (CRAN) <http://cran.r-project.org/> on the internet. From the main CRAN page, you can download R for:
+
+- **Windows** <http://cran.r-project.org/bin/windows/base/>
+For Windows-operating machines, choose “base”, then click on “Download R 3.1.2 for Windows” to download the executable file “R-3.1.2-win32.exe”. If you want the graphics windows to be unattached to and independent of the R console, click “Yes” to Customize the startup options, then click “SDI (separate windows)” for Display Mode.
+
+-  **OS X** <http://cran.r-project.org/bin/macosx/> 
+For Mac OS X Download the disk-image “R-3.1.2-snowleopard.pkg” or "R-3.1.2-mavericks.pkg" as appropriate. Versions are also available for Linux and other Unix platforms.
+
+
+###Installing RStudio on a computer
+Go to the RStudio homepage <http://www.rstudio.com/products/RStudio/>
+
+Click on "Desktop" then "Download RStudio Desktop" under the Open Source Edition column. 
+
+Follow instructions to download the appropriate version for your operating system. RStudio requires that R is already installed on your computer, so make sure to do that first!
+
+###Installing R packages
+R allows users to perform calculations using pre-programmed functions. These functions are available in packages. Some packages come with the basic R installation; others can be downloaded from the internet. In order to use functions in a package you must first install the package and then load it into your workspace. You only need to install the package once, but you must load it before each use. **Please install the following packages to get going; others may be necessary as we proceed**:
+
+- tidyverse
+- swirl
+- knitr
+
+There are several ways to install a package:
+
+- In the R console, type: `install.packages("package-name")` Note that R is case sensitive, and that the package name should be in quotes.
+
+- In RStudio, click on the "Packages" tab in the bottom right quadrant of the interface, click Install, type the package name and click Istall _or_ click  Tools => Install Packages, type the package name and click Install
+
+- In R for Windows clients, go to the Packages menu => Install package(s).
+
+- In R for MacOS X clients, go to the Package & Data menu and click on Package Installer => CRAN (binaries) => Get list. Click on the box “install dependencies” in order to automatically install other necessary libraries while installing your R libraries.
+
+After you have installed a package and before each work session, you will need to load it by typing `library(package-name)` in the R console. No quotes needed on the package-name this time.
+
+
+
+
