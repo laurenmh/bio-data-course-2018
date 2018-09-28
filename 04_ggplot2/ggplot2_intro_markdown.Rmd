@@ -1,0 +1,50 @@
+---
+title: "ggplot_intro_markdown"
+output: html_document
+---
+
+
+```{r pressure, echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+
+# Read in the dates
+SpokaneFish <- read.csv(file="LowerSpokaneFish.csv", header=TRUE)
+
+# Fix dates
+SpokaneFish$Date <- as.Date(SpokaneFish$Date, "%m/%d/%Y")
+
+# Subset redband
+Redband <- subset(SpokaneFish, Species=="RB" & is.na(ScaleAge)==F )   #This is one of several ways to subset data
+
+ggplot(Redband, aes(x=Length)) + geom_histogram()
+
+
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(Redband, aes(x=Length, y=Weight)) + geom_point(aes(color=as.factor(ScaleAge)))
+
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(Redband, aes(x=Length, y=Weight)) + geom_point() + geom_smooth(formula = y ~ poly(x,2))
+
+```
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(Redband, aes(x=as.factor(ScaleAge), y=Weight)) + geom_boxplot()
+
+```
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(Redband, aes(x=Length, y=Weight)) + geom_point(size=1, color="darkblue", shape=1) +
+  scale_x_log10() + scale_y_log10() +
+  xlab("Redband trout length (mm)") + ylab("Redband trought weight (g)")
+```
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(Redband, aes(x=Length, y=Weight)) + geom_point() + facet_wrap(~ScaleAge)
+
+```
+
