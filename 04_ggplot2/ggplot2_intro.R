@@ -115,10 +115,17 @@ ggplot(Redband, aes(x=Length, y=Weight)) + geom_point(aes(color=as.factor(ScaleA
 ## For example, if we could relate length and width by calculating and graphing a smoothing function:
 ggplot(Redband, aes(x=Length, y=Weight)) + geom_point() + geom_smooth()
 
+## We also can specify a model to fit
+## Looks like a quadratic function fits it well:
+ggplot(Redband, aes(x=Length, y=Weight)) + geom_point() + geom_smooth(formula = y ~ poly(x,2))
 
 ## QUESTION: How and why do the following lines differ from the one above, and from each other?
-ggplot(Redband, aes(x=Length, y=Weight)) + geom_point(aes(color=as.factor(ScaleAge))) + geom_smooth()
-ggplot(Redband, aes(x=Length, y=Weight, color=as.factor(ScaleAge))) + geom_point() + geom_smooth()
+ggplot(Redband, aes(x=Length, y=Weight)) + geom_point(aes(color=as.factor(ScaleAge))) + geom_smooth(formula = y ~ poly(x,2))
+ggplot(Redband, aes(x=Length, y=Weight, color=as.factor(ScaleAge))) + geom_point() + geom_smooth(formula = y ~ poly(x,2))
+
+## QUESTION: What would be a better model fit for the second figure?
+## TASK: Modify the code to use that model. Hint: ?geom_smooth will give you the possible arguments that you could specify
+
 
 
 ## Another example of a statistical transformation is geom_boxplot() which:
@@ -156,7 +163,7 @@ ggplot(Redband, aes(x=Length, y=Weight)) + geom_point(size=1, color="darkblue", 
 ## TASK: Create a histogram of scale age with dark blue filled bars
 
 
-## TASK: Relate legnth with scale age on a log-log scale
+## TASK: Relate length with scale age on a log-log scale
 
 #########################################
 ## 6) Specifying facets
@@ -172,8 +179,8 @@ ggplot(Redband, aes(x=Length, y=Weight)) + geom_point() + facet_wrap(~ScaleAge)
 ggplot(Redband, aes(x=Length, y=Weight)) + geom_point() + facet_grid(Year~ScaleAge) 
 
 
-## TASK: Make a histogram of legnth faceted by scale age
-## QUESTION: Is the distribution of legnth normal within age?
+## TASK: Make a histogram of length faceted by scale age
+## QUESTION: Is the distribution of length normal within age?
 
 ## TASK: Using the full SpokaneFish dataset, make a histogram of length faceted by species
 ## Why did we focus on redband trout?
