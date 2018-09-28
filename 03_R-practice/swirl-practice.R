@@ -22,10 +22,12 @@
 # If that happens, type swirl() to resume and enter the same user name you used previously, 
 # and you should be able to navigate directly back to where you left off. 
 
+# If you do swirl does not load below, please make sure it is installed
+# install.packages("swirl")
 library(swirl)
 
 # I. R Programming -> 4. Vectors  
-# Copy your assignment of num_vector below. Create a new vector that is num_vector divided by 3
+# Copy your assignment of num_vect below. Create a new vector that is num_vect divided by 3
 
 
 # II. R Programming -> 5. Missing Values  
