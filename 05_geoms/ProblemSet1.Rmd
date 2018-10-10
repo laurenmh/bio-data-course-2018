@@ -23,7 +23,7 @@ To get you started here's the code to read in the data and give it better column
 
 ```{r}
 # library data.table allows you to read files directly from the internet
-# install.packages(data.table)
+# install.packages("data.table")
 library(data.table)
 
 # Let's skip down to the data, which starts at line 72
