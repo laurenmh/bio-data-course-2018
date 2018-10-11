@@ -102,6 +102,9 @@ icedat0 <- fread('http://climate.nasa.gov/system/internal_resources/details/orig
 
 icedat <- icedat0[-c(1:10),]
 names(icedat) = c("year_decimal", "Greenlandmass_Gt", "Antarcticamass_Gt")
+icedat$year_decimal <- as.numeric(icedat$year_decimal)
+icedat$Greenlandmass_Gt <- as.numeric(icedat$Greenlandmass_Gt)
+icedat$Antarcticamass_Gt <- as.numeric(icedat$Antarcticamass_Gt)
 ```
 
 
