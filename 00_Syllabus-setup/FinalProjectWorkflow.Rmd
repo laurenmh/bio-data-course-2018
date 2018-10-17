@@ -1,15 +1,15 @@
 ---
-title: "ENVS 410/510 Final Project Workflow"
+title: "BIO 410/510 Final Project Workflow"
 output:
   pdf_document: default
   html_document: default
 ---
 
-## Please submit to Canvas before class on Monday 2/26
+## Please submit to Canvas before class on Wednesday 11/14
 ## Points: 30
 
 ## Final project objective
-The objective of the final project will be to complete a fully reproducible workflow that uses data to address your chosen environmental question. The project must illustrate all of the following tasks:
+The objective of the final project will be to complete a fully reproducible workflow that uses data to address your chosen question. The project must illustrate all of the following tasks:
 
 * Some form of data access / reading into R
 * Integration of multiple datasets to address the question
@@ -25,8 +25,8 @@ The objective of the final project will be to complete a fully reproducible work
 ## Intermediate step: Literature review and workflow plan
 To progress toward the final project, please prepare a literature review, identify a dataset and develop a workflow plan. A description of each is below. We will peer-review these prior to the final project to help each other with the workflows.
 
-### I. Literature review
-We expect the literature review will be around 5 well cited paragraphs that do the following:
+### I. Literature review  
+I expect the literature review will be around 5 well cited paragraphs that do the following:  
 
 __1. Introduce the problem and explain why__  
 
@@ -49,12 +49,17 @@ __4. Hypotheses/questions__
 
 - List these clearly and in a logical order  
 - Make hypotheses directionally using predictions (e.g. "I predict N will reduce plant diversity" rather than "I predict N will change plant diversity")
-   
+
+__5. Literatured cited__
+
+   - At least 10 relevant, peer-reviewed citations  
+   - Citations are scientifically formatted (e.g., follow conventions for the journal _Ecology_)   
+
 **This is a nice reference on scientific writing:** Turbek, Sheela P., Taylor M. Chock, Kyle Donahue, Caroline A. Havrilla, Angela M. Oliverio, Stephanie K. Polutchko, Lauren G. Shoemaker, and Lara Vimercati. “Scientific Writing Made Easy: A Step-by-Step Guide to Undergraduate Writing in the Biological Sciences.” The Bulletin of the Ecological Society of America 97, no. 4 (October 2016): 417–26. https://doi.org/10.1002/bes2.1258.
 
 
 ### II. Dataset identification
-Please identify the datasets you will be using to address your question. We expect at least two datasets that will be combined to address your questions. Provide the data source (including web url) and sufficient metadata to convey who collected the data, how it was collected, and what each column contains. In addition, please provide an overview of the structure of the datasets (give as much information about the data as the str() function would return).
+Please identify the datasets you will be using to address your question. I expect at least two datasets that will be combined to address your questions. Provide the data source (including web url) and sufficient metadata to convey who collected the data, how it was collected, and what each column contains. In addition, please provide an overview of the structure of the datasets (give as much information about the data as the str() function would return).
 
 ### III. Workflow plan
 In English, please describe the workflow you will use tidy your raw data, manipulate and summarize it in relevant ways, and visualize it. Please include any QAQC steps (e.g., "remove non-species such as 'miscellaneous litter' from the species column") as well as aggregation steps (e.g., "count the number of entries by plot and year to calculate species richness"). The goal here is to develop a logic to your workflow before you code. 
