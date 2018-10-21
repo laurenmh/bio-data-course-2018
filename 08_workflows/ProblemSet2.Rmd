@@ -1,0 +1,53 @@
+---
+title: "Problem Set 2"
+output: html_document
+---
+
+
+## 1) TOTAL BIOMASS WITH OVER TIME 
+Check out  http://www.cedarcreek.umn.edu/research/experiments/e001
+
+#### i) What did Haddad et al. 2002 find? See text and Figure 6  
+- What happened to total biomass during the drought?  
+- What years, treatments and fields did they include in Figure 6a?
+
+### WORKFLOW A: Mimic Figure 6a. Please make a graph of mean total biomass in the successional field control plots over time. Include standard errors around each plotted point. 
+
+Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?ple001
+
+#### ii) Write out the workflow you will use in English.
+- What QAQC will you do beforehand? What data will you include and what will you drop?  
+- How will you manipulate the data to create the graph?  
+
+
+#### iii) Write out and run the workflow in tidyverse R.
+Please comment your code. Here's the data import to get you going:
+```{r}
+cdrplant <- read.csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
+  as_tibble() 
+```
+
+
+## 2) C:N RATIOS WITH N-DEPOSITION
+Check out  http://www.cedarcreek.umn.edu/research/experiments/e001  
+
+#### i) What did Wedin and Tilman 1996 find? See text and Figure 7  
+
+### WORKFLOW: Please make a graph of the ratio of C:N in aboveground biomass in response to the amount of nitrogen added by species. Include standard error bars around each plotted point.
+Unlike Wedin, these data are just from Field C, so no need to represent each field separately.  
+The sample sizes for some species and N levels are very low, please only include species that have at least 4 replicates in each of at least 3 nitrogen levels.  NOTE: It is okay to iteratively check this (e.g., plotting first and then identifying which species match these criteria)
+Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?nbe001
+
+#### ii) Write out the workflow you will use in English.
+- What QAQC will you do beforehand?  
+- How will you manipulate the data to create the graph?  
+
+
+#### iii) Write out and run the workflow in tidyverse R.  
+Please comment your code. Here's the data import to get you going:
+```{r}
+cdrCN <- read.csv("e001_Plant aboveground biomass carbon and nitrogen.csv", stringsAsFactors = F, skip = 491) %>%
+  as_tibble()
+```
+
+*QUESTION: How does aboveground tissue C:N ratios change with N enrichment? Do patterns appear consistent across species?*

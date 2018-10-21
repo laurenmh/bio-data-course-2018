@@ -1,0 +1,38 @@
+---
+title: "Workflow planning: Species richness and N"
+output: html_document
+---
+## 1) SPECIES RICHNESS WITH N-DEPOSITION 
+Check out  http://www.cedarcreek.umn.edu/research/experiments/e001
+
+#### i)  What did Clark and Tilman 2008 find? See text and Figure 1  
+Q: What pattern did they observe between species richness and nitrogen treatment?  
+Q: What years and treatments did they include in Figure 1?  
+
+
+###WORKFLOW: Mimic Figure 1 (except on the y-axis just plot species richness).
+Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?ple001  
+
+#### ii) With a partner, write out the workflow you will use in English and put up a green sticky when done.
+**Data QAQC**
+
+
+**Data manipulation**
+
+
+#### iii) After we have discussed as a class, write out and run the workflow in tidyverse R.
+Here's the data import to get you going:
+```{r}
+# load the tidyverse package
+library(tidyverse)
+
+# create a function to calculate standard error
+calcSE<-function(x){
+  x <- x[is.na(x)==F]
+  sd(x)/sqrt(length(x))
+}
+
+# read in the data 
+cdrplant <- read.csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
+  as_tibble()
+```

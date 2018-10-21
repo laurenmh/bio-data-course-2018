@@ -1,0 +1,78 @@
+---
+title: "Workflow planning: Species richness and N"
+output: html_document
+---
+## 1) SPECIES RICHNESS WITH N-DEPOSITION 
+Check out  http://www.cedarcreek.umn.edu/research/experiments/e001
+
+#### i)  What did Clark and Tilman 2008 find? See text and Figure 1  
+Q: What pattern did they observe between species richness and nitrogen treatment?  
+Q: What years and treatments did they include in Figure 1?  
+
+
+###WORKFLOW: Mimic Figure 1 (except on the y-axis just plot species richness).
+Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?ple001  
+
+#### ii) With a partner, write out the workflow you will use in English and put up a green sticky when done.
+**Data QAQC**
+To clean the data, I will first remove any biomass values that are NA or are less than or equal to zero.
+Second, I will remove any species entries that are not species (e.g., miscellaneous categories, etc). To identify these values I will look at the unique species values, and then filter out the entries that do not correspond to actual species.
+Third, to make sure that species are not double counted I will only retain unique values for each field/plot/year/treatment/species combination. To do this I will remove the biomass column and retain unique entries. 
+
+**Data manipulation**
+I will calculate species richness within each field/plot/year/treatment combination. I will group the data by field, plot, year, and treatment and count the number of rows within each group to measure species richness.
+Second, I will calculate the mean and std error of richness within each treatment and year.
+Third, I will filter the data to only retain the first 25 years (following Clark and Tilman 2008), and to only retain a control, low, medium, and high N treatment.
+
+
+#### iii) After we have discussed as a class, write out and run the workflow in tidyverse R.
+Here's the data import to get you going:
+```{r}
+# load the tidyverse package
+library(tidyverse)
+
+# create a function to calculate standard error
+calcSE<-function(x){
+  x <- x[is.na(x)==F]
+  sd(x)/sqrt(length(x))
+}
+
+# read in the data 
+cdrplant <- read.csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
+  as_tibble()
+
+cdrrich <- cdrplant %>%
+  
+  # remove entries with no biomass
+  filter(!is.na(Biomass), Biomass > 0) %>%
+  
+  # remove entries that are not species option 1, this is one way that is faster with many species
+  filter(!Species %in% c("Miscelaneous Woody", "Miscelanious herb", "Pine cones", "Mosses & lichens 2", "Miscellaneous forb", "Miscellaneous sedges", "Miscellaneous woody plants", "Miscellaneous grasses 2", "Miscellaneous legumes", "Forb seedlings", "Miscellaneous rushes", "Fungi", "Miscellaneous grasses", "Miscellaneous sp.", "Miscellaneous herbs", "Miscellaneous litter")) %>%
+  
+  # remove entries that are not species option 2, this is the way we learned, but it is tedious with many species...
+  # here just removing two entries as a demo
+  filter(Species != "Miscellaneous litter",
+         Species != "Miscellaneous herbs") %>%
+  
+  # select only unique species (ie, remove duplicate entries) 
+  select(-Biomass) %>%
+  unique() %>%
+  
+  # calculate richness within year, field, plot and treatment
+  group_by(Year, Field, Plot, NTrt) %>%
+  summarize(rich=n()) %>%
+  
+  # calculate mean richness and se richness within year and treatment
+  group_by(Year,NTrt) %>%
+  summarize(avg_rich = mean(rich), se_rich = calcSE(rich)) %>%
+
+  # select only the years and treatments that Clark and Tilman 2008 used
+  # choosing to use just the first control treatment here (1 and not 9)
+  # Not that you can use the %in% syntax such that: NTrt %in% c(1,2,3,5)
+  filter(Year < 2005,
+         NTrt == 1 | NTrt == 2 | NTrt == 3 | NTrt == 5) 
+  
+
+ggplot(cdrrich, aes(x=Year,y=avg_rich,color=as.factor(NTrt)))+geom_point() + geom_line() + geom_errorbar(aes(x=Year,ymin=avg_rich-se_rich,ymax=avg_rich+se_rich))
+
+```
