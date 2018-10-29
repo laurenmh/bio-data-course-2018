@@ -39,7 +39,7 @@
 library(tidyverse)
 
 # Handy se function
-calcSE<-function(x){
+calcSE <- function(x){
   x <- x[!is.na(x)]
   sd(x)/sqrt(length(x))
 }
@@ -95,10 +95,6 @@ ggplot(sumdat, aes(x = year, y= meanweight)) + geom_point() + geom_line() +
   geom_errorbar(aes(ymin = meanweight - seweight, ymax = meanweight + seweight))
 
 ## QUESTION: Could the species identity be affecting these patterns? How would you check? 
-
-
-
-
 
 
 ##############################################
