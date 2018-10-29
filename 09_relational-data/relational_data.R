@@ -12,7 +12,7 @@
 # "Version 2017.04.01, April 2017,
 #http://www.datacarpentry.org/sql-ecology-lesson/
 
-# You can learn more about The Portal Project here:
+# You can learn more about the Portal Project here:
 # https://portal.weecology.org/
 
 
