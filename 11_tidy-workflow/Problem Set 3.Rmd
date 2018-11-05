@@ -1,0 +1,112 @@
+---
+title: "Problem Set 3"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# I. TIDY DATA
+
+## Read in the data 
+
+```{r}
+# Load the tidyverse
+library(tidyverse)
+rawdat <- read_csv("Niwot_Salix_2014_WillowSeedlingSurvey.csv", skip = 10)
+
+```
+
+### 1) Learn about the data:
+- QUESTION: Where are the meta data for this file?  
+
+- QUESTION: What is this format of data useful for?  
+
+- QUESTION: What is this format of data not useful for?   
+
+
+### 2) Fill in missing variables:
+Using the example below, fill in the rest of the relevant columns of filldat
+```{r}
+## From the book: Sometimes when a data source has primarily been used for data entry, 
+## missing values indicate that the previous value should be carried forward:
+## Compare filldat and rawdat
+filldat <- rawdat %>%
+  fill(block) %>%
+  print
+
+filldat <- rawdat %>%
+  fill(block:temp)
+```
+
+### 3) Common problem 1: Column headers are values, not variable names
+
+- QUESTION: Does this problem exist in this dataset? If so, how would you change it?
+
+- TASK: In the chunk below, create a new tibble called cleandat that starts with filldat and then solves this tidy data problem
+
+- TASK: Go ahead and remove the "w_" from values in your new column
+
+
+```{r}
+
+```
+
+
+### 4) Common problem 2: Variables are stored in both rows and columns
+
+- QUESTION: Does this problem exist in this dataset? If so, how would you change it?
+
+
+- TASK: If necessary, copy your cleandat workflow below and add code that addresses this problem
+
+```{r}
+
+```
+
+
+
+### 5) Common problem 3: Multiple variables are stored in one column 
+
+- QUESTION: Does this problem exist in this dataset? If so, how would you change it? Note: there might be multiple examples of this. Check the meta data on numeric versus alphabetical numbering.
+
+- TASK: If necessary, copy your cleandat workflow into the chunk below and add code that addresses this problem
+
+```{r}
+
+```
+
+
+### 6) Common problem 4: Multiple types of observational units are stored in the same table
+
+- QUESTION: Does this problem exist in this dataset? If so, how would you change it?  
+
+
+- TASK: If necessary, copy your cleandat workflow below and add code that addresses this problem. Note: You may need to make separate tibbles.
+
+```{r}
+
+```
+
+### 7) Common problem 5: A single observational unit is stored in multiple tables
+
+- QUESTION: Does this problem exist in this dataset? If so, how would you change it?
+
+
+- TASK: If necessary, copy your workflow below and add code that addresses this problem
+
+```{r}
+
+```
+
+### 8) Put it together graphically
+
+- QUESTION: How does snow addition, temperature and nitrogen affect willow seedling survival and growth?
+
+```{r}
+
+```
+
+
