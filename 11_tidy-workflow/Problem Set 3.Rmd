@@ -8,13 +8,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# I. TIDY DATA
+# TIDY DATA
 
 ## Read in the data 
 
-```{r}
+```{r, message = F, warning=F}
 # Load the tidyverse
 library(tidyverse)
+
+# Read in the data
 rawdat <- read_csv("Niwot_Salix_2014_WillowSeedlingSurvey.csv", skip = 10)
 
 ```
@@ -37,8 +39,6 @@ filldat <- rawdat %>%
   fill(block) %>%
   print
 
-filldat <- rawdat %>%
-  fill(block:temp)
 ```
 
 ### 3) Common problem 1: Column headers are values, not variable names
@@ -84,7 +84,7 @@ filldat <- rawdat %>%
 - QUESTION: Does this problem exist in this dataset? If so, how would you change it?  
 
 
-- TASK: If necessary, copy your cleandat workflow below and add code that addresses this problem. Note: You may need to make separate tibbles.
+- TASK: If necessary, copy your cleandat workflow below and add code that addresses this problem. Note: You may need to make new tibbles.
 
 ```{r}
 
@@ -105,8 +105,12 @@ filldat <- rawdat %>%
 
 - QUESTION: How does snow addition, temperature and nitrogen affect willow seedling survival and growth?
 
+- VISUALIZE IT:  
+
 ```{r}
 
 ```
+
+- INTERPRET IT:
 
 
