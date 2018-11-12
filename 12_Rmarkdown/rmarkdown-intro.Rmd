@@ -1,0 +1,335 @@
+---
+title: "Rmarkdown introduction"
+output: html_document
+---
+
+Note: This introduction was developed largely by Julien Bruns of NCEAS.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Some Markdown fun
+
+## Adding an image
+
+- Markdown way: 
+
+```
+![LTER logo](images/LTER-logo.png)
+```
+![LTER logo](https://lternet.edu/wp-content/uploads/2018/02/LTER-network-horizontal.png)
+
+**=> not much control!!!**
+
+<br>
+
+- Using HTML tags: 
+
+<br>
+
+<img src="images/LTER-logo.png" width="50%" align="right" alt="LTER logo" />
+
+<br>
+<br>
+
+- Using code chunks: 
+
+```{r, LTER logo, out.width='50%', fig.align="right", fig.cap="LTER logo", results='hide'}
+  knitr::include_graphics("images/LTER-logo.png")
+```
+
+
+```{r, LTER logo chunk, out.width='50%', fig.align="center", fig.cap="LTER logo", echo=FALSE}
+knitr::include_graphics("./images/LTER-logo.png")
+```
+
+## Adding an URL
+
+Pure markdown: <http://www.lternet.edu>
+
+This will also work: http://www.lternet.edu
+
+Adding link to a word: [LTER](http://www.lternet.edu)
+
+Opening the link in a new window (R Markdown): [LTER](http://www.lternet.edu){target="_blank"}
+
+
+
+---
+
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+**Task 1**
+
+- Insert the `rmarkdown` hex sticker (http://hexb.in/hexagons/rmarkdown.png) centered in this document and add a legend 
+- Add some text describing `R markdown` and list 2-3 things you think you will like about it
+- Add a URL to our class Book (R for Data Science)
+- **Bonus**: How would you make sure the hex sitcker has a height of 2"? 
+
+**Task 2**
+
+- Go on the giphy website: https://giphy.com/ 
+- Choose a GiF you like
+- Add it to your document in a way that you can see it animated
+
+
+_DONE?! High-Five the cat then!_
+
+```{r, cat five, out.width='50%', fig.align="center", fig.cap="Checked!!", echo=FALSE}
+knitr::include_graphics("https://media.giphy.com/media/10ZEx0FoCU2XVm/giphy.gif")
+```
+
+
+---
+
+# Code Chunk
+
+## Insert a code chunk
+
+- From GUI
+- Using keyboard code chunk: `Ctrl` + `Alt` + `I` (`Cmd` + `Option` + `I` on macOS).
+
+```{r iris median no param}
+
+library(tidyverse)
+
+iris_avg <- iris %>%
+  group_by(Species) %>%
+  summarise_all(funs(median = median))
+
+iris_avg
+
+```
+
+
+---
+
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+**Task**
+
+For our writeups, we will not want the `Tidyverse` message in our final document. What should you try to change to the above code chunk to  do so?
+
+---
+
+## Some basic plotting
+
+```{r iris median plot}
+ggplot(iris_avg, aes(x=Species, y =Sepal.Length_median)) + geom_bar(stat = "identity")
+
+```
+
+---
+
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+- How could you hide the code and just show the plot?
+- Add a legend to your plot
+- Make the figure 8" wide
+
+---
+
+
+
+# Tables
+
+
+## Markdown
+
+|   x |   y |   z |
+|-----|-----|-----|
+|   1 |   2 |   3 |
+|   4 |   5 |   6 |
+
+**=> Tedious!!**
+
+
+## You can render tables of data frames in R Markdown
+
+```{r my first table}
+knitr::kable(iris_avg, caption = "Iris Median data")
+```
+
+But not that convenient if the table is large:
+
+```{r large table}
+knitr::kable(iris, caption = "Iris data")
+```
+
+
+# Embedding interactive elements - HTML widgets
+
+You can use html widgets to add some interactivity to your R markdown documents
+
+
+## Interactive table
+
+To let the user be able to explore the data, we can create an interactive table
+
+```{r interactive table}
+library(DT)
+DT::datatable(iris)
+```
+
+
+## Interactive Maps
+
+We have a csv file with the all the LTER sites. We can read this file and create an interactive maps in few lines of code
+
+- Show the leaflet
+- Render => discuss the `read_csv` message
+- How to fix this => `message-FALSE`
+- Add a caption
+
+```{r leaflet, message = FALSE, fig.cap= "LTER sites of the contiguous US"}
+library(leaflet)
+
+# Read the LTER sites
+lter_sites <- read_csv("./data/LTER_sites.csv")
+
+# Map of the contiguous US LTER sites
+leaflet(data=lter_sites) %>% addTiles() %>% setView(-98, 40, zoom = 4) %>% addCircleMarkers(~Longitude, ~Latitude, popup = ~Code)
+```
+
+
+# Inline code 
+
+**You can use R to compute values within your text documentation**
+
+For example, you could compute the number of LTER sites from the csv files we used. So if this file is updated because 2 new LTER sites are added by NSF, your text will be automatically updated accordingly!
+
+You can add inline code outside the chunks by using single quotation:
+```{r LTER site count, echo=TRUE, eval=FALSE}
+There are `r nrow(lter_sites)` US LTER sites!
+```
+
+This will render as:  
+**There are `r nrow(lter_sites)` US LTER sites!**
+
+
+---
+
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+- Write a sentence stating the number of LTER sites, stipulating today's date. Note: Try googling for a function that returns today's date.   
+- Write a sentence with the name of the most northern LTER site. Note: How would you identify and extract this site name from the data?  
+
+---
+
+
+# Global Chunk Options
+
+**As you can set options for code chunks, you can set the same for all the chunks of the R markdown document.**
+
+
+## Set your figure size for all
+
+```{r global figure size}
+knitr::opts_chunk$set(fig.width=12, fig.height=8)
+```
+
+
+## Output folder 
+
+For example, we could want to save all our plots in a specific folder
+
+```{r global options folder}
+knitr::opts_chunk$set(fig.path = "./figures/") 
+```
+
+
+## Set your figure type to `PNG`
+
+```{r globaal figure size}
+knitr::opts_chunk$set(dev = "png")
+```
+
+## Know your (default) `Knit` options
+
+Want to know your default knit options?
+
+```{r default knit, eval=FALSE}
+str(knitr::opts_chunk$get())
+```
+
+--
+
+# Knit Options via `YAML` metadata header
+
+See this reference for more option
+
+## Adding a table of content
+
+```{YAML}
+---
+title: "Rmarkdown intro"
+author: "Your name"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+```
+
+---
+
+<img src="images/challenge.png" align="left" alt="Question" /> 
+
+### Exercise
+
+<br>
+
+Using the Cheat sheet (or the Web), for this Rmarkdown document:
+
+- Limit the depth of the table of content (TOC) to headers of level-2
+- Place the TOC on the left of the document "floating"
+- **Bonus**: Make TOC showing all the sections all the time
+
+---
+
+
+
+## Adding numbering to headers
+
+```{YAML}
+---
+title: "Rmarkdown Intro"
+author: "Your name"
+output:
+  html_document:
+    number_sections: true
+---
+```
+
+## Save the intermediate the Markdown document
+
+```{YAML}
+---
+title: "Rmarkdown intro"
+author: "Your name"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+    keep_md: true
+---
+```
