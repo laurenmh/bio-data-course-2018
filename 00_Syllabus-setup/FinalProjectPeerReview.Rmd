@@ -1,5 +1,5 @@
 ---
-title: "ENVS 410/510 Peer Review Format"
+title: "BIO 410/510 Peer Review Format"
 output:
   pdf_document: default
   html_document: default
@@ -25,12 +25,14 @@ _Give your general impressions of the manuscript here_:
 _Comments._  
 
 **b. Data overview**  
-* Do the datasets meet requirements?
-* Is there sufficient metadata and information about the data structure to understand how it will be used? Is there as much information as would be returned by the str() function?
+
+* Do the datasets meet requirements?  
+* Is there sufficient metadata and information about the data structure to understand how it will be used? Is there as much information as would be returned by the str() function?  
 _Comments._  
 
 
 **c. Workflow**  
+
 * Are the end-product visualization goals appropriate and feasible given the data?  
 * Has the author accounted for all relevant QAQC?  
 * Is there a logical flow from the raw data to the end products? If not, what suggestions would you make?   
