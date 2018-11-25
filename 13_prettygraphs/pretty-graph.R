@@ -5,7 +5,7 @@
 
 ## Objective: To gain an overview of ggplot2 tools for beautifying graphs.
 
-## For simplicity let's go back to the iris dataset from problem set 2
+## For simplicity let's use the built-in iris dataset
 library(tidyverse)
 data("iris")
 
