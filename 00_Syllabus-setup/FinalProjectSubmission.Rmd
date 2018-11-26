@@ -1,15 +1,15 @@
 ---
-title: "ENVS 410/510 Final Project Workflow"
+title: "BIO 410/510 Final Project Workflow"
 output:
   pdf_document: default
   html_document: default
 ---
 
-## Please submit both the .Rmd file and the exported, PDF or html file to Canvas by 10 am Wed 3/21
+## Please submit both the "cleaned-up, report-worthy"" html AND the "all work shown, echo = TRUE" files to Canvas by 9 am Wed 12/5
 ## Points: 40
 
 ## Final project objective
-The objective of the final project will be to complete a fully reproducible workflow that uses data to address your chosen environmental question. The project must illustrate all of the following tasks:
+The objective of the final project will be to complete a fully reproducible workflow that uses data to address your chosen question. The project must illustrate all of the following tasks:
 
 * Some form of data access / reading into R
 * Integration of multiple datasets to address the question
@@ -24,7 +24,7 @@ The objective of the final project will be to complete a fully reproducible work
 
 
 ### I. Introduction (Literature review)
-We expect the literature review will be around 5 well cited paragraphs that do the following:
+The literature review will be around 5 well cited paragraphs that do the following:
 
 __1. Introduce the problem and explain why__  
 
@@ -49,10 +49,10 @@ __4. Hypotheses/questions__
 - Make hypotheses directionally using predictions (e.g. "I predict N will reduce plant diversity" rather than "I predict N will change plant diversity")
    
    
-### II. Approach
+### II. Approach/Methods
 - Provide a description of the data sources, including who collected the data and how it was collected  
 - Describe how you will use the data to address your questions  
-- Include R chunks with data import, data tidying, and any important preliminary visualizations (these can be in non-exported R code chunks)
+- Include R chunks with data import, data tidying, and any important preliminary visualizations (for the "cleaned up" version these will be in non-exported R code chunks; they should be shown in the "all work shown" version)
 
 
 ### III. Results
@@ -62,7 +62,7 @@ __4. Hypotheses/questions__
 - Have these chunks export captioned, publication-worthy figures 
 
 ### IV. Discussion
-We expect the discussion will be around 5 well-cited paragraphs that do the following:
+The discussion will be around 3-5 well-cited paragraphs that do the following:
 
 1. Provide a big overview or summary of consequences of strongest results (1 paragraph)    
 2. Expand thoughts on results and hypothesis (2-4 paragraphs)  
@@ -78,7 +78,7 @@ We expect the discussion will be around 5 well-cited paragraphs that do the foll
 * The comprehensive literature review should be in the introduction, here it is necessary to link to past work but no need to introduce too many new citations
 
 ### V. Literature cited
-Please follow MLA citation guidelines. This will include in-text, parenthetical citations and a literature cited section at the end. Aim for at least 10 cited works.  
+Please follow MLA citation guidelines. This will include in-text, parenthetical citations and a literature cited section at the end. Aim for at least 10 peer-reviewed cited works.  
 
 
 **This is a nice reference on scientific writing:** Turbek, Sheela P., Taylor M. Chock, Kyle Donahue, Caroline A. Havrilla, Angela M. Oliverio, Stephanie K. Polutchko, Lauren G. Shoemaker, and Lara Vimercati. “Scientific Writing Made Easy: A Step-by-Step Guide to Undergraduate Writing in the Biological Sciences.” The Bulletin of the Ecological Society of America 97, no. 4 (October 2016): 417–26. https://doi.org/10.1002/bes2.1258.
