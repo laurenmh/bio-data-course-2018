@@ -1,5 +1,5 @@
 ---
-title: "ENVS 410/510 Course Feedback"
+title: "BIO 410/510 Course Feedback"
 output:
   pdf_document: default
   html_document: default
@@ -26,12 +26,12 @@ output:
 
 ### Instruction
 
-1) What aspects of the course and our teaching helped you learn best?
+1) What aspects of the course and teaching helped you learn best?
 \
 \
 \
 \
-2) What advice would you give to help us improve your learning in this course?
+2) What advice would you give to help improve your learning in this course?
 \
 \
 \
