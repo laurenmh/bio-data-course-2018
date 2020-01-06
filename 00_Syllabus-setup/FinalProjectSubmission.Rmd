@@ -5,7 +5,7 @@ output:
   html_document: default
 ---
 
-## Please submit both the "cleaned-up, report-worthy"" html AND the "all work shown, echo = TRUE" files to Canvas by 9 am Wed 12/5
+## Please submit both a "cleaned-up, report-worthy"" html or pdf AND the "all work shown, echo = TRUE" files to Canvas by Wed 3/18
 ## Points: 40
 
 ## Final project objective
@@ -13,12 +13,10 @@ The objective of the final project will be to complete a fully reproducible work
 
 * Some form of data access / reading into R
 * Integration of multiple datasets to address the question
-* Data tidying preparation using tidyr, including data joins
 * Use of dplyr to manipulate and summarize the data in relevant ways
 * Initial data visualization with ggplot2
 * Final, publication-worthy visualization with ggplot2
-* RMarkdown writeup, with final submission as both the .Rmd file and a nicely formatted as a 
-    PDF or html document that includes code and results
+* RMarkdown writeup, with final submission as both a clean html or pdf file, and a "show your under-the-hood work" version of the file
 *  Overall clean and clear presentation of the workflow, code, and explanation
 
 

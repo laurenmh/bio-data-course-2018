@@ -5,7 +5,7 @@ output:
   html_document: default
   word_document: default
 ---
-#### BIO 410/510 | Fall 2018 | Klamath 13 | MW 9:00 - 10:50 am | 4 credits
+#### BIO 410/510 | Winter 2020 | Klamath 5 | MF 12:00 - 1:20 am | 4 credits
 
 ##Overview
 This course covers the non-statistical aspects of the data life cycle, including how to store, clean, visualize and communicate data (Figure 1). It is intended as a complement to statistics courses - we will cover how to get your data into shape for analysis, and how to communicate your findings visually. It is primarily a methods class and will be taught in R (but there is no expectation that students know R coming in).
@@ -16,8 +16,8 @@ This course satisfies the "Analytical Approaches" requirement for Environmental 
 
 **Instructor**: **Dr Lauren Hallett** is a plant community ecologist specializing in ecological restoration.  
 **Email**: hallett@uoregon.edu *Please include BIO 410/510 in email subject lines*  
-**Office**: Pacific Hall 220
-**Office hours**: M 11-12 pm and by appointment 
+**Office**: Pacific Hall 220  
+**Office hours**: Tu 2-4 pm and by appointment 
 
 
 [**Canvas site**](https://canvas.uoregon.edu/courses/119970): Our website is accessible via the UO Canvas server, use your UO email and password to access the site. Problem sets will be distributed and submitted via Canvas. https://canvas.uoregon.edu/
@@ -25,7 +25,7 @@ This course satisfies the "Analytical Approaches" requirement for Environmental 
 **How I will contact you**: My communication to you outside of class will take place via Canvas email. 
 
 ##Course material
-Our primary course material will be [**R for Data Science**](http://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham, which is available for free online. I will post other readings to Canvas. Please make sure to read book sections and papers before the class in which they are assigned. 
+Our primary course material will be **R for Data Science** by Garrett Grolemund and Hadley Wickham, which is available for free online (http://r4ds.had.co.nz/). I will post other readings to Canvas. Please make sure to read book sections and papers before the class in which they are assigned. 
 
 ##Objectives
 By completing this course, students will be able to:  
@@ -40,7 +40,7 @@ This class combines lectures on topics in data science and in-class exercises.
 ##Class assignments and requirements
 There are two main components required for successful completion of the course.
 
-**A. Problem sets** Problem sets are designed to develop the skills you learn in class and to gain comfort in the R environment through practice. Problem sets will typically include designing and implementing code and interpreting code and figures. There will be four problem sets, to be submitted on Canvas before class on the Monday they are due. Students are encouraged to collaborate on problem sets, and to come to "work day" classes with ideas and questions.
+**A. Problem sets** Problem sets are designed to develop the skills you learn in class and to gain comfort in the R environment through practice. Problem sets will typically include designing and implementing code and interpreting code and figures. There will be four problem sets, to be submitted on Canvas before class on the day they are due. Students are encouraged to collaborate on problem sets, and to come to "work day" classes with ideas and questions.
 
 **B. Final project** The focal experience of the class will be to develop a research project that addresses a biological or environmental question with data. Students will be expected to identify a question, contextualize the question with a literature review, locate data relevant to answering the question, and interpret and communicate that data with a workflow in R. It is expected that students integrate data from multiple sources. In general, students will be using public data, but if you have a data project of your own (particularly graduate students) we can discuss its suitability for this requirement. 
 
@@ -70,43 +70,46 @@ Part III: Final paper | 40
 
 ##Deadlines
 Problem sets are due before class on:  
-M 10/15 PS 1  
-M 10/29 PS 2  
-M 11/12 PS 3  
-W 11/28 PS 4  
+F 1/17 PS 1  
+M 2/3 PS 2  
+F 2/17 PS 3  
+M 3/2 PS 4  
 
 Final project due dates are:  
-M 10/8 Topic proposed  
-M 10/22 Data sources identified  
-W 11/14 Literature review and workflow plan  
-M 11/21 Peer review  
-W 12/4 Final project  
+F 1/24 Topic proposed  
+F 2/7 Data sources identified  
+F 2/28 Literature review and workflow plan  
+F 3/6 Peer review  
+W 3/18 Final project  
 
 ##Course topics and tentative schedule
 The topics on the tentative outline are subject to change. This is a guess, but we will take as long as needed on each lesson. Topics and lessons generally correspond to the noted chapter numbers in the book, additional readings will be posted to Canvas and emailed the week prior to when they should be read. 
 
 Day | Date | Topic | Lesson 
 ------|-------|------------|-----------------------------------------
-1 | M 9/24 | Visualize | Plotting before analyzing  
-2 | W 9/26 | General   | Overview of R, R Studio  
-3 | M 10/1 | General | `swirl` practice and importing data 11.1-11.6 
-4 | W 10/3 | Visualize | `ggplot2`: aesthetic mapping and facets 3.1-3.5  
-5 | M 10/8 | Visualize | `ggplot2`: geometric objects, coordinate systems 3.6-3.10  
-6 | W 10/10 | Visualize | _Work day_ 
-7 | M 10/15 | Transform | Rearranging data and `dplyr` 5.1-5.5  
-8 | W 10/17 | Transform | Grouping and summarizing with `dplyr` 5.6-5.7   
-9 | M 10/22 | Transform | Workflows and the pipeline 6.1-6.3, 18.1-18.3  
-10 | W 10/24 | Transform | _Work day_   
-11 | M 10/29 | Wrangle | Relational data and joins with `dplyr` 13.1-13.7  
-12 | W 10/31 | Wrangle | Tidy data and `tidyr` 12.1-12.2, 12.7  
-13 | M 11/5 | Wrangle | Workflows with data tidying 12.3-12.6  
-14 | W 11/7 | Wrangle | _Work day_  
-15 | M 11/12 | Communicate | Good vs bad graphs  
-16 | W 11/14 | Communicate | Spatial visuals _with Joanna Merson_ 
-17 | M 11/19 | Communicate | `ggplot2`: themes  
-18 | W 11/21 | Communicate | Peer review   
-19 | M 11/26 | Communicate | _Work day_  
-20 | W 11/28 | Communicate | Odds and ends  
+1 | M 1/6 | Visualize | Plotting before analyzing  
+2 | F 1/10 | General   | Overview of R, R Studio  
+3 | M 1/13 | General | `swirl` practice and importing data 11.1-11.6 
+4 | F 1/17 | Visualize | `ggplot2`: aesthetic mapping and facets 3.1-3.5  
+**-** | **M 1/20** | **MLK Day** | **No class**
+5 | F 1/24 | Visualize | `ggplot2`: geometric objects, coordinate systems 3.6-3.10  
+6 | M 1/27 | Visualize | RMarkdown
+7 | F 1/31 | Visualize | _Work day_ 
+8 | M 2/3 | Transform | Rearranging data and `dplyr` 5.1-5.5  
+9 | F 2/7 | Transform | Grouping and summarizing with `dplyr` 5.6-5.7   
+10 | M 2/10 | Transform | Workflows and the pipeline 6.1-6.3, 18.1-18.3  
+11 | F 2/14 | Transform | _Work day_   
+12 | M 2/17 | Wrangle | Relational data and joins with `dplyr` 13.1-13.7  
+13 | F 2/21 | Wrangle | Workflows with relational data 12.3-12.6  
+14 | M 2/24 | Wrangle | _Work day_ 
+15 | F 2/28 | Wrangle |  Tidy data and `tidyr` 12.1-12.2, 12.7  
+16 | M 3/2 | Communicate | Good vs bad graphs  
+17 | F 3/6 | Communicate | Peer review  
+18 | M 3/9 | Communicate | Spatial visuals _with Joanna Merson_ 
+19 | F 3/13 | Communicate | Odds and ends
+
+
+
 
 
 
