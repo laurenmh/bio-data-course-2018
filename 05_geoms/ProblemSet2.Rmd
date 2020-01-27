@@ -1,0 +1,155 @@
+---
+title: "Problem Set 2"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+  word_document: default
+---
+
+### Name: 
+
+About this format: This problem set is saved as an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). To add a new R chunk click the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+**To submit: Please rename this file LASTNAME_ProblemSet2 and upload both the .Rmd and the final .html file to the assignments folder on Canvas**
+
+
+### I. CO2 Trends
+First read in the data and get it ready to use
+You can find the data and read more about it here: https://climate.nasa.gov/vital-signs/carbon-dioxide/
+In particular, the metadata is at the top of the txt file if you click on the Download Data button
+
+To get you started here's the code to read in the data and give it better column names
+
+```{r}
+# library data.table allows you to read files directly from the internet
+# install.packages("data.table")
+library(data.table)
+
+# Let's skip down to the data, which starts at line 72
+CO2data <- fread('ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt', skip = 71)
+
+# give descriptive but short names
+names(CO2data) <- c("year", "month", "decimalDate", "averageCO2", "interpolatedCO2", "trendCO2", "numberDays")
+
+
+```
+
+
+1. Read about the data   
+Why are there three different columns for CO2? Where do the data come from? What does numberDays refer to? What does -99.99 in the average column and -1 in the number of days column mean?
+
+
+2. Visualize the data: How do atmospheric CO2 concentrations change over the time series? 
+
+a. Describe your process: What category of graph will you use? What statistical transformation will you use? Does the underlying data differ if you use the interpolated or trend columns? Does the statistical transformation differ if you use the interpolated or trend columns?  
+
+
+b. Graph it:  
+```{r}
+
+```
+
+
+3. Visualize the data: Which months are the CO2 values at the maximum? Minimum? Why is this?  
+
+a. Describe your process: What category of graph will you use? What statistical transformation will you use?  
+
+b. Graph it:  
+```{r}
+
+```
+
+
+### II. Temperature trends
+First we'll read in the data and get it ready to use
+You can find the data and read about it here: https://climate.nasa.gov/vital-signs/global-temperature/
+
+```{r}
+tempdata <- fread('http://climate.nasa.gov/system/internal_resources/details/original/647_Global_Temperature_Data_File.txt')
+
+```
+
+1. Read about the data
+What information is in each of the three columns? Where do the data come from? Using the names() function to give tempdata descriptive column headings
+
+```{r}
+
+```
+
+2. Visualize the data
+a. Recreate the graph on the website using all three columns
+```{r}
+
+```
+
+
+b. Recreate the graph on the website using two columns and a statistical transformation
+```{r}
+
+```
+
+
+### III. Ice sheets
+Have a look at the following data, and read it into R 
+Either use fread() in library(data.table) to read it from the web, or read.csv() 
+
+Data description: http://climate.nasa.gov/vital-signs/land-ice/
+Raw data file: http://climate.nasa.gov/system/internal_resources/details/original/499_GRN_ANT_mass_changes.csv
+```{r}
+# Run the following to read the .csv from the web and rename columns
+icedat0 <- fread('http://climate.nasa.gov/system/internal_resources/details/original/499_GRN_ANT_mass_changes.csv')
+
+icedat <- icedat0[-c(1:10),]
+names(icedat) = c("year_decimal", "Greenlandmass_Gt", "Antarcticamass_Gt")
+icedat$year_decimal <- as.numeric(icedat$year_decimal)
+icedat$Greenlandmass_Gt <- as.numeric(icedat$Greenlandmass_Gt)
+icedat$Antarcticamass_Gt <- as.numeric(icedat$Antarcticamass_Gt)
+```
+
+
+1. Describe the data set: What are the columns and units? Where do the numbers come from? What is the uncertainty in measurement? 
+
+2. Plot the data and describe the trends you observe.
+
+```{r}
+
+```
+
+
+### IV. Sea level
+Have a look at the following data, and read it into R
+Either use fread() in library(data.table) to read it from the web, or read.table() if you download the data and save it as a .txt file. Consider using the skip argument to skip down to the data.
+
+Data description: http://climate.nasa.gov/vital-signs/sea-level/
+Raw data file: http://climate.nasa.gov/system/internal_resources/details/original/121_Global_Sea_Level_Data_File.txt
+```{r}
+
+```
+
+
+1. Describe the data set: What are the columns and units? Where do the numbers come from? What is the uncertainty in measurement?
+
+2. Plot the data and describe the trends you observe.
+```{r}
+
+```
+
+
+### V. Longer term CO2 trends
+Have a look at the following data, and read it into R
+Either use fread() in library(data.table) to read it from the web, or read.table() if you download the data and save as a .txt file. 
+
+Description of data set: http://cdiac.esd.ornl.gov/trends/co2/vostok.html
+Data source: http://cdiac.ornl.gov/ftp/trends/co2/vostok.icecore.co2
+```{r}
+
+```
+
+1. Describe the data set: What are the columns and units? Where do the numbers come from? 
+
+2. Plot the data and describe the trends you observe. Please both assess the relationship between depth and age, and between those variables and CO2. If you would like to reverse the order on the x axis (so that values go from deep to shallow and old to young), add the following to the ggplot line: + scale_x_continuous(trans = "reverse")
+```{r}
+
+```
+
