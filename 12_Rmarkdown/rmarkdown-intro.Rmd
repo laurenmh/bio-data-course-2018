@@ -71,7 +71,7 @@ Opening the link in a new window (R Markdown): [LTER](http://www.lternet.edu){ta
 - Add a URL to our class Book (R for Data Science)
 - **Bonus**: How would you make sure the hex sitcker has a height of 2"? 
 
-**Task 2**
+**Task 2 - EXTRA**
 
 - Go on the giphy website: https://giphy.com/ 
 - Choose a GiF you like
@@ -170,7 +170,7 @@ knitr::kable(iris, caption = "Iris data")
 ```
 
 
-# Embedding interactive elements - HTML widgets
+# Embedding interactive elements - HTML widgets - FUN EXTRA!
 
 You can use html widgets to add some interactivity to your R markdown documents
 
@@ -187,7 +187,7 @@ DT::datatable(iris)
 
 ## Interactive Maps
 
-We have a csv file with the all the LTER sites. We can read this file and create an interactive maps in few lines of code
+We have a csv file with the all the Long-Term, Ecological Research (LTER) sites. We can read this file and create an interactive maps in few lines of code
 
 - Show the leaflet
 - Render => discuss the `read_csv` message
@@ -211,7 +211,7 @@ leaflet(data=lter_sites) %>% addTiles() %>% setView(-98, 40, zoom = 4) %>% addCi
 
 For example, you could compute the number of LTER sites from the csv files we used. So if this file is updated because 2 new LTER sites are added by NSF, your text will be automatically updated accordingly!
 
-You can add inline code outside the chunks by using single quotation:
+You can add inline code outside the chunks by using single backward quotation:
 ```{r LTER site count, echo=TRUE, eval=FALSE}
 There are `r nrow(lter_sites)` US LTER sites!
 ```
@@ -224,7 +224,7 @@ This will render as:
 
 <img src="images/challenge.png" align="left" alt="Question" /> 
 
-### Exercise
+### Exercise - EXTRA!
 
 <br>
 
