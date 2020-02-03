@@ -3,6 +3,19 @@
 ### TRANSFORM: Rearranging data                                              ### 
 ################################################################################
 
+## Another way to think about ggplot naming (from https://beanumber.github.io/sds192/lab-ggplot2.html)
+# In ggplot2, aesthetic means “something you can see”. Each aesthetic is a mapping between a visual cue and a variable. Examples include:
+#   
+# position (i.e., on the x and y axes)
+# color (“outside” color)
+# fill (“inside” color)
+# shape (of points)
+# line type
+# size
+# 
+# Each type of geom accepts only a subset of all aesthetics—refer to the geom help pages to see what mappings each geom accepts. Aesthetic mappings are set with the aes() function.
+
+#### TODAY ####
 ## OBJECTIVES:
 ## To learn how manipulate data into a form useable for analysis and graphs.
 ## To do this in a way that each step is traceable and reproducible.
@@ -53,6 +66,10 @@ rawdat
 ## Ophf! To never see that again, let's remove rawdat from the workspace
 rm(rawdat)
 
+## Another way to get a tibble when you upload is to use the readr package, also in the tidyverse
+rawdat_alt <- read_csv("CalispellCreekandTributaryTemperatures.csv") 
+
+# EXTRA QUESTION TO PONDER: why did we not need stringsAsFactors for this? 
 
 #################################
 ## 3) dplyr tool number 1: select
@@ -63,6 +80,8 @@ rm(rawdat)
 select(wtemp, calispell_temp, date, time)
 
 ## QUESTION: Are the columns in the same order as wtemp?
+
+
 ## NOTE: We didn't have to type wtemp$date etc as we would outside of the tidyverse
 ## the select() function knows we are referring to wtemp.
 
