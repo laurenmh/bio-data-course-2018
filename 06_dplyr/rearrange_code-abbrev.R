@@ -23,7 +23,7 @@ library(tidyverse)
 
 rawdat <- read.csv("CalispellCreekandTributaryTemperatures.csv", stringsAsFactors = FALSE) 
 
-## QUESTION: What does stringsAsFactors mean? Why would we want to make it false?
+## QUESTION TO PONDER (EXTRA): What does stringsAsFactors mean? Why would we want to make it false?
 
 ## Let's assign more useable column names
 names(rawdat) <- c("date", "time", "calispell_temp", "smalle_temp", "winchester_temp")
@@ -45,7 +45,7 @@ wtemp <- as_tibble(rawdat)
 ## Let’s see what is meant by this 
 wtemp
 
-## QUESTION: What class is wtemp? How many rows does wtemp have? How many columns?
+## REVIEW QUESTION AND PLAY (EXTRA): What class is wtemp? How many rows does wtemp have? How many columns?
 
 ## To reinforce how nice this is, print rawdat instead:
 rawdat
@@ -78,7 +78,7 @@ select(wtemp, calispell_temp, date, time)
 ## We can also specify the columns that we want to discard. Let's remove smalle_temp, winchester_temp that way:
 select(wtemp, -smalle_temp, -winchester_temp)
 
-## TASK: Get that result a third way, by removing all columns from smalle_temp:winchester_temp.
+## EXTRA TASK: Get that result a third way, by removing all columns from smalle_temp:winchester_temp.
 ## Be careful! select(wtemp, -smalle_temp:winchester_temp) doesn't do it...
 
 
@@ -123,13 +123,13 @@ unique(wtemp$calispell_temp)
 ## for which the value of calispell_temp is not NA.
 ## How many rows match this condition?
 
-## TASK: Please filter all the values of calispell_temp where the temp is greater or equal to 15, or is na
+## EXTRA TASK: Please filter all the values of calispell_temp where the temp is greater or equal to 15, or is na
 
 ##################################
 ## 4) dplyr tool number 3: arrange
 ##################################
 
-## Sometimes we want order the rows of a dataset according to the values of a particular variable
+## Sometimes we want to order the rows of a dataset according to the values of a particular variable
 ## For example, let's order the dataframe by calispell_temp 
 arrange(wtemp, calispell_temp)
 
@@ -141,9 +141,9 @@ arrange(wtemp, -calispell_temp)
 arrange(wtemp, desc(calispell_temp))
 
 ## And you can arrange by multiple variables. 
-## TASK: arrange the tibble by date then desc(smalle_temp)
+## TASK: arrange the tibble by date (ascending) and smalle_temp (descending)
 
-## TASK: How could you use arrange() to sort all missing values to the start? (Hint: use is.na()).
+## EXTRA TASK: How could you use arrange() to sort all missing values to the start? (Hint: use is.na()).
 
 
 ##################################
@@ -169,7 +169,7 @@ library(lubridate)
 ## Try it out:
 mdy("1/13/09")
 
-## Once dates are saved as POSIXct date-time objects, we can extract information from them. Try it out.
+## Once dates are saved as date-time objects, we can extract information from them. Try it out.
 ## First, let's save the character string as a date-time object:
 mydate <- mdy("1/13/09")
 
@@ -179,7 +179,7 @@ day(mydate)
 
 ##QUESTION: How would you extract the year from mydate?
 
-## Let's use the mutate and mdy functions to create a variable called date2 that stores the date as a POSIXct date-time object.
+## Let's use the mutate and mdy functions to create a variable called date2 that stores the date as a date-time object.
 mutate(wtemp, date2 = mdy(date))
 
 ## Finally, we can use mutate to create several columns. For example, let's create date2, then create a column for month and year
@@ -188,8 +188,7 @@ mutate(wtemp, date2 = mdy(date), month = month(date2), year = year(date2))
 ## Let's go ahead and save those changes in an object called wtemp2 object:
 wtemp2 <- mutate(wtemp, date2 = mdy(date), month = month(date2), year = year(date2))
 
-## QUESTION: There are a variety of useful creation functions. 
-## TASK: Using the documentation in 5.5, please:
+## EXTRA TASKS (definitely do these!): There are a variety of useful creation functions. Using the documentation in 5.5, please:
 ## 1) Create a column that is the ranked values of calispell_temp
 
 ## 2) Create a column that is the mean value of calispell_temp (hint: you might need to add na.rm = T)
