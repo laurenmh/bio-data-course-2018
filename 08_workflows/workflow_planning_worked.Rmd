@@ -27,7 +27,7 @@ Third, I will filter the data to only retain the first 25 years (following Clark
 
 #### iii) After we have discussed as a class, write out and run the workflow in tidyverse R.
 Here's the data import to get you going:
-```{r}
+```{r, message = F}
 # load the tidyverse package
 library(tidyverse)
 
@@ -38,8 +38,7 @@ calcSE<-function(x){
 }
 
 # read in the data 
-cdrplant <- read.csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
-  as_tibble()
+cdrplant <- read_csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
 
 cdrrich <- cdrplant %>%
   

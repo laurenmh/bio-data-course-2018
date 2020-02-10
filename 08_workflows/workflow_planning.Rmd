@@ -33,6 +33,5 @@ calcSE<-function(x){
 }
 
 # read in the data 
-cdrplant <- read.csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
-  as_tibble()
+cdrplant <- read_csv("e001_Plant aboveground biomass data.csv", skip = 726) 
 ```

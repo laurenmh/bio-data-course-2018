@@ -22,8 +22,8 @@ Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?ple001
 
 
 #### iii) Write out and run the workflow in tidyverse R.
-Please comment your code. Here's the data import to get you going:
-```{r}
+Please comment your code. Here's the data import to get you going (uncomment the data import - make sure this .Rmd and the .csv files are stored in the same folder!):
+```{r, message = F}
 library(tidyverse)
 #cdrplant <- read_csv("e001_Plant aboveground biomass data.csv", skip = 726)
 ```
@@ -45,7 +45,7 @@ Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?nbe001
 
 
 #### iii) Write out and run the workflow in tidyverse R.  
-Please comment your code. Here's the data import to get you going:
+Please comment your code. Here's the data import to get you going (uncomment the data import):
 ```{r}
 #cdrCN <- read_csv("e001_Plant aboveground biomass carbon and nitrogen.csv", skip = 491) 
 ```
