@@ -1,8 +1,9 @@
 ---
-title: "Problem Set 2"
+title: "Problem Set 3"
 output: html_document
 ---
 
+*Please submit as an html file and show all your work (i.e., do NOT put echo = FALSE in your chunk)*
 
 ## 1) TOTAL BIOMASS WITH OVER TIME 
 Check out  http://www.cedarcreek.umn.edu/research/experiments/e001
@@ -23,8 +24,8 @@ Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?ple001
 #### iii) Write out and run the workflow in tidyverse R.
 Please comment your code. Here's the data import to get you going:
 ```{r}
-cdrplant <- read.csv("e001_Plant aboveground biomass data.csv", stringsAsFactors = F, skip = 726) %>%
-  as_tibble() 
+library(tidyverse)
+#cdrplant <- read_csv("e001_Plant aboveground biomass data.csv", skip = 726)
 ```
 
 
@@ -46,8 +47,7 @@ Metadata here: http://www.cedarcreek.umn.edu/research/data/dataset?nbe001
 #### iii) Write out and run the workflow in tidyverse R.  
 Please comment your code. Here's the data import to get you going:
 ```{r}
-cdrCN <- read.csv("e001_Plant aboveground biomass carbon and nitrogen.csv", stringsAsFactors = F, skip = 491) %>%
-  as_tibble()
+#cdrCN <- read_csv("e001_Plant aboveground biomass carbon and nitrogen.csv", skip = 491) 
 ```
 
 *QUESTION: How does aboveground tissue C:N ratios change with N enrichment? Do patterns appear consistent across species?*
