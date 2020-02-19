@@ -1,0 +1,82 @@
+---
+title: "Problem Set 4"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## I. Creating workflows with the Portal Project
+For each of the following prompts, please:
+a) Identify the information needed
+b) Identify the datasets that have this information
+c) Write the in-English workflow needed to go from raw data to question
+d) Write the R code using tidyverse syntax to go from raw data to question. Note: it's good practice to comment your code with hashtags as you go. You often may want to visualize the data to enter the question.
+
+
+### 1) What is the average weight of each taxa?
+a) Information needed:
+b) Datasets needed:
+c) English workflow:
+
+d) R workflow:
+```{r}
+
+```
+
+### 2) What is the percentage of each species in each taxa?
+a) Information needed:
+b) Datasets needed:
+c) English workflow:
+
+d) R workflow:
+```{r}
+
+```
+
+
+### 3) How many specimens of each sex are there for each year?
+a) Information needed:
+b) Datasets needed:
+c) English workflow:
+
+d) R workflow:
+```{r}
+
+```
+
+
+### 4) What are the minimum, maximum and average weight for each species of Rodent?
+a) Information needed:
+b) Datasets needed:
+c) English workflow:
+
+d) R workflow:
+```{r}
+
+```
+
+
+### 5) What is the average hindfoot length for male and female rodent of each species? Is there a Male / Female difference?
+a) Information needed:
+b) Datasets needed:
+c) English workflow:
+
+d) R workflow:
+```{r}
+
+```
+
+
+### 6) What is the average weight of each rodent species over the course of the years? Is there any noticeable trend for any of the species?
+a) Information needed:
+b) Datasets needed:
+c) English workflow:
+
+d) R workflow:
+```{r}
+
+```
+
