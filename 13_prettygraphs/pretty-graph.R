@@ -165,10 +165,10 @@ ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color = Species)) +
   geom_point() + theme(text = element_text(size = 16))
 
 
-# You can make your own themes (if we're lucky in week 10), and there's also a whole library of themes:
+# You can make your own themes and there's also a whole library of themes:
 library(ggthemes)
 
-# Note the *most* useful, but fun:
+# Not the *most* useful, but fun:
 ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, color = Species)) + 
   geom_point() + ggthemes::theme_fivethirtyeight()
 
