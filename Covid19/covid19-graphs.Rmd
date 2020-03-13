@@ -92,8 +92,7 @@ ggplot(notchina, aes(x = date, y = cases)) + geom_point(color = "skyblue", size 
 ## III. Pretty graph exercise: Themes
 ### _What is the point of social distancing?_
 
-One of the most important concepts for controlling Covid19 is that of "flattening the curve". Mitigation through social distancing helps reduce the rate of transmission, which keeps the healthcare system from becoming overwhelmed. This doesn't reduce the total number of cases necessarily, but it does spread them out over time. This is why we are having class remotely today, and why classes will be remote after break. Please do your part, and explain this to others.
-
+One of the most important concepts for controlling Covid19 is that of "flattening the curve". Mitigation through social distancing helps reduce the rate of transmission, which keeps the healthcare system from becoming overwhelmed. This doesn't reduce the total number of cases necessarily, but it does spread them out over time. This is why we are having class remotely today, and why classes will be remote after break. 
 
 ```{r}
 
