@@ -1,0 +1,127 @@
+---
+title: "Data Management and Visualization"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+#### ENVS 410/510 | Winter 2022 | HUE 112 | TTh 12-1:50 pm | 4 credits
+
+## Overview
+This course covers the non-statistical aspects of the data life cycle, including how to store, clean, visualize and communicate data (Figure 1). It is intended as a complement to statistics courses - we will cover how to get your data into shape for analysis, and how to communicate your findings visually. It is primarily a methods class and will be taught in R (but there is no expectation that students know R coming in).
+
+![The data life-cycle (figure from Grolemund and Wickham)](data-science-explore.png)
+ 
+This course satisfies the "Analytical Approaches" requirement for Environmental Science majors and the "MAPS" requirement for Biology majors. 
+
+**Instructor**: **Dr. Lauren Hallett** (she/her) is an assistant professor of plant community ecology specializing in ecological restoration. Data synthesis is fundamental to her work and she has a passion for developing and teaching open, reproducible science.  
+
+**Email**: hallett@uoregon.edu
+
+**Office hours**: TBD by a poll in first week of class
+
+[**Canvas site**](https://canvas.uoregon.edu/courses/119970): Our website is accessible via the UO Canvas server, use your UO email and password to access the site. Pre-recorded videos and scripts will be available in modules for each week. Problem sets will be distributed and submitted via Canvas. https://canvas.uoregon.edu/
+
+**How I will contact you**: Our class will communicate through our Canvas site. Announcements and emails are archived there and automatically forwarded to your UO email, and can even reach you by text.
+Check and adjust your settings under Account > Notifications. 
+
+## Course material
+Our primary course material will be **R for Data Science** by Garrett Grolemund and Hadley Wickham, which is available for free online (http://r4ds.had.co.nz/); supplemental readings are uploaded to Canvas. Please make sure to read book sections and papers before the class in which they are assigned. 
+
+## Objectives
+By completing this course, students will be able to:  
+1) Interpret figures in scientific papers and popular media  
+2) Locate data relevant to biological and environmental questions  
+3) Understand the steps linking raw data to communicated findings  
+4) Create exploratory and publication-worthy graphs  
+
+## Structure of the course
+The course is broken into five approx. 2-week modules: Intro to R, Visualize, Transform, Wrangle, and Communicate. For each module the readings, scripts and assignments are posted in advance, along with short videos that overview key concepts and demonstrate their implementation in R. 
+
+Early in a module we will use class time to go over the concepts and scripts in depth, and later in a module we will use these times as "work sessions" for you to collaborate on the problem sets and other assignments. I strongly encourage watching the posted videos before class. This makes for essentially a "flipped" classroom setting, allowing us to spend less class time on lectures and more time completing the scripts and making substantial progress on the problem sets, aided by having your classmates and me available. 
+
+There is a lot of value in working collaboratively, but this is also an uncertain and challenging time. When needed, students have been successful in this class just working through the videos and scripts on their own time. So if you have to miss a day - no sweat, just work through the scripts and videos. If you have to miss an extended period - also no sweat, but _please_ communicate with me about it so we can make a plan to keep you on track. I am exploring options to conduct the class simultaneously in person and over Zoom; if you are interested in this please let me know.
+
+Participation will be based primarily on your completion of the scripts and secondarily by interactive engagement (either in class or via discussion boards). **The one day I expect you to prioritize attendance is peer review day.** Attendance during peer review is important to give and receive feedback with your fellow classmates. _If you cannot attend please communicate with me in advance. If there is a critical mass of students that don't feel comfortable in-person that day, we may host the peer review in a virtual format._
+
+
+## Class assignments and requirements
+There are two main components required for successful completion of the course.
+
+**A. Problem sets** Problem sets are designed to develop the skills you learn in class and to gain comfort in the R environment through practice. Problem sets will typically include designing and implementing code and interpreting code and figures. There will be four problem sets, to be submitted on Canvas by midnight the day they are due. Students are encouraged to collaborate on problem sets, and to come to "work day" classes with ideas and questions.
+
+**B. Final project** The focal experience of the class will be to develop a research project that addresses a biological or environmental question with data. Students will be expected to identify a question, contextualize the question with a literature review, analyze data relevant to answering the question, and interpret and communicate that data with a workflow in R. In general, students will be using one of our pre-identified datasets, but if you have a data project of your own (particularly graduate students) we can discuss its suitability for this requirement. 
+
+## Grade allocation
+Grading will be based on a total of 200 points, where 90% of the points will earn an A, 80% a B, etc. Participation will reflect attendance and involvement in discussion and in-class exercises. The breakdown by assignments is as follows: 
+
+Assignment| Points  
+---|---
+**4 Problem sets** (20 pts each) | 80 
+**Final project**|
+Part I: Literature review and proposed workflow | 30 
+Part II: Peer review | 20 
+Part III: Final paper | 40 
+**Participation** | 
+Completed scripts (2 pts each) | 18  
+Interaction (in class or message board) | 12  
+
+
+## Policies
+1) Please note that assignments are due on Canvas. If an assignment is late, I will deduct 10% of the total points allocated to that assignment, and I will deduct 10% for each additional late day.
+
+2) Please do not come to class if you are sick! I expect all students to actively participate in exercises and contribute to discussion, but this can be either in class, on the discussion boards, or both. There are enough resources posted on Canvas that you can be successful even if you cannot come in person for an extended period. Please just communicate with me so we can make a plan for keeping you on track.
+
+3) We will follow school policy of plagiarism and academic dishonesty. All students need to be familiar with the Student Conduct Code (https://policies.uoregon.edu/vol-3-administration-student-affairs/ch-1-conduct/student-conduct-code).
+
+
+## Deadlines
+Completed in-class scripts are due by midnight on:  
+F 1/7 Intro to R  
+F 1/21 ggplot2 and geoms  
+F 2/4 rearrange and pipelines  
+F 2/18 relational data and tidy data  
+F 2/25 better graphics
+
+Problem sets are due by midnight on:  
+F 1/14 PS 1  
+F 1/28 PS 2  
+F 2/11 PS 3  
+F 3/4 PS 4
+
+Final project milestones are due by midnight on:   
+M 2/7 Topic ID  
+M 2/21 Literature review and workflow plan  
+M 2/28 Peer review 
+M 3/16 Final project  
+
+_Please see the ENVS 410/510 calendar on Canvas (click on the Calendar icon in the dark green bar on the far left, then click on ENVS 410/510 in the Calendars drop-down) for a calendar view of deadlines. You can also link this to your preferred calendar app to keep track of deadlines! To do so, click on "Calendar Feed" and copy the link to your calendar app._ 
+
+## Course topics and tentative schedule
+The topics on the tentative outline are subject to change. This is a guess, but we will take as long as needed on each lesson. Topics and lessons generally correspond to the noted chapter numbers in the book, additional readings will be posted to Canvas and emailed the week prior to when they should be read. Please note that the reading information is also summarized within each module on Canvas.  
+
+Day | Date | Module | Lesson 
+------|-------|------------|-----------------------------------------
+1 | T 1/4 | Visualize | Plotting before analyzing
+2 | Th 1/6 | General   | Overview of R, R Studio  Chapter 1, 6.1-6.3
+3 | T 1/11 | General | `swirl` practice
+4 | Th 1/13 | Visualize | `ggplot2`: aesthetic mapping and facets 3.1-3.5
+5 | T 1/18 | Visualize | `ggplot2`: geometric objects, coordinate systems 3.6-3.10
+6 | Th 1/20 | Visualize | RMarkdown and importing data Chapter 11, 27.1-27.4
+7 | T 1/25 | Visualize | _Work day_
+8 | Th 1/27 | Transform | Rearranging data and `dplyr` 5.1-5.5
+9 | T 2/1 | Transform | Grouping, summarizing and piping with `dplyr` 5.6-5.7, 18.1-18.3  
+10 | Th 2/3 | Transform | Workflows
+11 | T 2/8 | Transform | _Work day_
+12 | Th 2/10 | Wrangle | Relational data and joins with `dplyr` 13.1-13.7
+13 | T 2/15 | Wrangle | Tidy data and `tidyr` 12.1-12.7
+14 | Th 2/17 | Wrangle | _Work day_
+15 | T 2/22 | Communicate | Beautiful graphs Chapter 28
+15 | Th 2/24 | Wrangle |  _Work day_
+19 | T 3/1 | Communicate | Peer review
+15 | Th 3/3 | Wrangle |  _Work day_
+18 | T 3/8 | Communicate | RMarkdown v2 27.5-27.6
+20 | Th 3/10 | Communicate | Odds and ends
+
+
+

@@ -7,7 +7,7 @@ output:
 ---
 #### BIO 410/510 | Winter 2020 | Klamath 5 | MF 12:00 - 1:20 pm | 4 credits
 
-##Overview
+## Overview
 This course covers the non-statistical aspects of the data life cycle, including how to store, clean, visualize and communicate data (Figure 1). It is intended as a complement to statistics courses - we will cover how to get your data into shape for analysis, and how to communicate your findings visually. It is primarily a methods class and will be taught in R (but there is no expectation that students know R coming in).
 
 ![The data life-cycle (figure from Grolemund and Wickham)](data-science-explore.png)
@@ -22,30 +22,30 @@ This course satisfies the "Analytical Approaches" requirement for Environmental 
 
 [**Canvas site**](https://canvas.uoregon.edu/courses/119970): Our website is accessible via the UO Canvas server, use your UO email and password to access the site. Problem sets will be distributed and submitted via Canvas. https://canvas.uoregon.edu/
 
-**How I will contact you**: My communication to you outside of class will take place via Canvas email. 
+**How we will contact you**: Our communication to you outside of class will take place via Canvas email. 
 
-##Course material
+## Course material
 Our primary course material will be **R for Data Science** by Garrett Grolemund and Hadley Wickham, which is available for free online (http://r4ds.had.co.nz/). I will post other readings to Canvas. Please make sure to read book sections and papers before the class in which they are assigned. 
 
-##Objectives
+## Objectives
 By completing this course, students will be able to:  
 1) Interpret figures in scientific papers and popular media  
 2) Locate data relevant to biological and environmental questions  
 3) Understand the steps linking raw data to communicated findings  
 4) Create exploratory and publication-worthy graphs  
 
-##Structure of the course
+## Structure of the course
 This class combines lectures on topics in data science and in-class exercises.
 
-##Class assignments and requirements
+## Class assignments and requirements
 There are two main components required for successful completion of the course.
 
 **A. Problem sets** Problem sets are designed to develop the skills you learn in class and to gain comfort in the R environment through practice. Problem sets will typically include designing and implementing code and interpreting code and figures. There will be four problem sets, to be submitted on Canvas before class on the day they are due. Students are encouraged to collaborate on problem sets, and to come to "work day" classes with ideas and questions.
 
 **B. Final project** The focal experience of the class will be to develop a research project that addresses a biological or environmental question with data. Students will be expected to identify a question, contextualize the question with a literature review, locate data relevant to answering the question, and interpret and communicate that data with a workflow in R. It is expected that students integrate data from multiple sources. In general, students will be using public data, but if you have a data project of your own (particularly graduate students) we can discuss its suitability for this requirement. 
 
-##Grade allocation
-Grading will be based on a total of 200 points, where 90% of the points will earn an A, 80% a B, etc. Participation will reflect attendance and involvement in discussion and in-class exercises. The breakdown by assignments is as follows: 
+## Grade allocation
+Grading will be based on a total of 200 points, where 90% of the points will earn an A, 80% a B, etc. Participation will reflect completion of in-class exercises. The breakdown by assignments is as follows: 
 
 Assignment| Points  
 ---|---

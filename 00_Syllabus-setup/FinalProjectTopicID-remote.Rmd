@@ -1,0 +1,27 @@
+---
+title: 'Final Project: Topic Identification'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Final project objective
+To help you look ahead, the objective of the final project will be to complete a fully reproducible workflow that uses data to address your chosen environmental question. The project will illustrate all of the following tasks:
+
+* Some form of data access / reading into R
+* Integration of multiple datasets to address the question
+* Use of dplyr to manipulate and summarize the data in relevant ways
+* Initial data visualization with ggplot2
+* Final, publication-worthy visualization with ggplot2
+* RMarkdown writeup, with final submission as both a clean html or pdf file, and a "show your under-the-hood work" version of the file
+*  Overall clean and clear presentation of the workflow, code, and explanation
+
+
+## Final project topic selection
+We will be building toward the final project throughout the class. We have identified a collection of datasets that relate to your academic interests as identified in the pre-class survey. Please check out the datasets we've collected - read their metadata and think about what questions you could use them to answer. Then please reply to this discussion with the dataset you would like to work with, and one or a few questions that you are interested in asking/answering with the data.
+
+
+## Alternative for graduate students and thesis students 
+If you have your own data, please respond with the following: 
+1) The questions you would like to answer with your data  
+2) The structure of the dataset (give as much information about the data as the str() function would return)
