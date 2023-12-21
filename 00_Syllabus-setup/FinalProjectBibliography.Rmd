@@ -1,0 +1,52 @@
+---
+title: "Final Project Annotated Bibliography"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Points: 10
+
+## Final project objective
+The objective of the final project will be to complete a fully reproducible workflow that uses data to address your chosen question(s). The project must illustrate all of the following tasks:
+
+* Some form of data access / reading into R
+* Use of dplyr to manipulate and summarize the data in relevant ways
+* Initial data visualization with ggplot2
+* Final, publication-worthy visualization with ggplot2
+* RMarkdown writeup, with final submission as both a clean html or pdf file, and a "show your under-the-hood work" version of the file
+*  Overall clean and clear presentation of the workflow, code, and explanation
+
+
+## Intermediate step: Annotated biblioraphy
+Now that you have identified a focal topic and associated dataset(s), the next step in progressing toward the final project is to become familiar with the literature. To that end, please outline your question and create an annotated bibliography of 10 peer-reviewed papers relevant to your topic. Your goal is to survey the literature to understand the context around your chosen topic, what is known, and what is unknown. This will allow you to frame and propose concrete questions and testable hypotheses in the next step, your literature review and workflow plan.
+
+_What makes a good question?_ 
+Good questions are *focused* - they should be answerable by your data visualization. They are also *debatable* - they shouldn't be too easy or straightforward (otherwise, why research it?). And they should be answerable through *scientific research* - they should focus on empirically understanding the world, rather than moral assessment.  
+
+
+## Guidelines 
+This assignment will consist of:  
+
+-  A one-paragraph introduction to the topic and preliminary questions, and a brief summary of the associated dataset.  
+
+- An annotated bibliography of 10 peer-reviewed publications. Each entry should include the following components:
+    - Citation: A full citation, scientifically formatted (e.g., follow conventions for the journal _Ecology_)   
+    - A brief (3-6 sentence) summary of the paper, stating the approach used in the paper, the main findings, and their significance. Make note of any particular strengths or weaknesses of the design or interpretation of the data presented.
+    - A brief (1-3 sentence) statement of how the findings in the paper will inform your work.  
+
+_Please submit html or pdf rendered from RMarkdown_
+
+
+## Science databases 
+The UO Library provides a nice summary of different biology-related databases here: https://researchguides.uoregon.edu/bio.  
+
+**Web of Science** https://researchguides.uoregon.edu/webofscience  
+This is one of the University’s best databases for searching for science journal articles. The default return of a search provides the most recent article on your topic at the top of the returned search page. However, the sorting can be changed to relevancy to increase the likelihood that the top returned items are related to your search or to times cited which promotes the most used articles to the top of the page.
+This database also has a citation index that can be used to determine who the most influential researchers are on a particular topic.
+
+**BioOne** https://bioone-org.uoregon.idm.oclc.org/  
+This database focuses on natural history and ecological topics. It will not only search by keywords but will also search the full text of the database for mention of a word. This makes the database work more like Google and is the only database in our science database collection that does full text searching. It is a great source for trying to find any interactions between any group of differing organisms and/or habitats.
+
+**Google Scholar** https://researchguides.uoregon.edu/googlescholar  
+A very powerful search tools for journal articles and gray literature. However, it will find many items that are not peer reviewed. When in doubt, check a journal title against Web of Science.  
