@@ -20,7 +20,7 @@ This course satisfies the "Analytical Approaches" requirement for Environmental 
 
 **Email**: hallett@uoregon.edu; pimsupaa@uoregon.edu
 
-**Office hours**: 3:30-4:30 Wednesday (Hallett, Pacific 220)
+**Office hours**: Dr. Hallett's office hours are 3:30-4:30 Wednesday in Pacific 220 and by appointment on Zoom. Jasmin's office hours are 3:30-5:30 Tuesday in Pacific 220.
 
 [**Canvas site**](https://canvas.uoregon.edu/courses/119970): Our website is accessible via the UO Canvas server, use your UO email and password to access the site. Pre-recorded videos and scripts will be available in modules for each week. Problem sets will be distributed and submitted via Canvas. https://canvas.uoregon.edu/
 
@@ -62,9 +62,9 @@ Assignment| Points
 **4 Problem sets** (20 pts each) | 80 
 **Final project** | 
 Part I: Annotated bibliography |  10
-Part I: Literature review and proposed workflow | 25 
-Part II: Peer review | 20 
-Part III: Final paper | 35 
+Part II: Literature review and proposed workflow | 25 
+Part III: Peer review | 20 
+Part IV: Final paper | 35 
 **Participation** | 
 Completed scripts (2 pts each) | 18  
 Interaction (in class or message board) | 12  
@@ -124,11 +124,11 @@ Day | Date | Module | Lesson
 12 | M 2/19 | Wrangle | Relational data and joins with `dplyr` 13.1-13.7
 13 | W 2/21 | Wrangle | Tidy data and `tidyr` 12.1-12.7
 14 | M 2/26 | Communicate | Beautiful graphs Chapter 28
-15 | W 2/28 | Wrangle/Communicate |  _Work day_
+15 | W 2/28 | Wrangle |  _Work day_
 16 | M 3/4 | Communicate | Peer review
 17 | W 3/9 | Communicate |  _Work day_
-18 | M 3/11 | Communicate | RMarkdown v2 27.5-27.6
-19 | W 3/13 | Communicate | Odds and ends
+18 | M 3/11 | Communicate | *Guest lecture*: Jo Merson and color theory
+19 | W 3/13 | Communicate | RMarkdown v2 27.5-27.6
 
 
 
